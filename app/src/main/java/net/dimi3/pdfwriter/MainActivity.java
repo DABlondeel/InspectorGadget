@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
             mDoc.add(new Paragraph(mText));
             mDoc.close();
             //show message the file is saved and the path
-            Toast.makeText(this, mFileName +".pdf\nis saved to\n "+mFileName, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, mFileName +".pdf\nis saved to\n "+mFilePath, Toast.LENGTH_LONG).show();
         }catch (Exception e){
-            //if anything goes wrong causeign an exception, this will break and show message
+            //if anything goes wrong causing an exception, this will break and show message
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
